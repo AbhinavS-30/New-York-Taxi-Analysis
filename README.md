@@ -46,17 +46,8 @@ This repository contains the code, data, and documentation for a regression (and
    - Re-formulate the problem as classification (e.g., short vs. medium vs. long trips).
    - Choose and evaluate classification metrics (Precision, Recall, F1-score).
 
-## Results & Observations
+## Observations
 
-Below is an example of **key metrics** (Mean Squared Error, Root Mean Squared Error, and R²) for the different models tried in this project. The performance is measured on a hold-out **test set** (20% of the data). 
-
-| Model              | MSE (Train) | MSE (Test) | RMSE (Train) | RMSE (Test) | R² (Train) | R² (Test) |
-|:-------------------|------------:|-----------:|-------------:|------------:|-----------:|----------:|
-| **Linear Regression** |  13.20      |  15.76     |   3.63        |   3.97       |   0.72     |   0.68    |
-| **Decision Tree**     |  11.10      |  14.90     |   3.33        |   3.86       |   0.76     |   0.70    |
-| **Random Forest**     |  10.45      |  13.40     |   3.23        |   3.66       |   0.78     |   0.73    |
-
-> **Observations**:
 > - **Linear Regression** performs decently as a baseline.
 > - **Decision Tree** improved performance slightly compared to Linear Regression.
 > - **Random Forest** yields the best results with the lowest test MSE and highest R², indicating it generalizes better on unseen data.
